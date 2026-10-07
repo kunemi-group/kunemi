@@ -13,7 +13,7 @@ export function EcosystemGraphic() {
       <g transform="translate(398 190)"><rect width="130" height="60" rx="4" className="node-card" /><circle cx="15" cy="17" r="4" fill="#d18b4b" /><text x="29" y="21" className="node-label">Shopflow</text><text x="15" y="42" className="node-meta">DISCOVER &amp; BUY</text></g>
       <g transform="translate(205 368)"><rect width="130" height="60" rx="4" className="node-card" /><circle cx="15" cy="17" r="4" fill="#7696a0" /><text x="29" y="21" className="node-label">Kumove</text><text x="15" y="42" className="node-meta">MOVE GOODS</text></g>
       <g transform="translate(12 190)"><rect width="138" height="60" rx="4" className="node-card" /><circle cx="15" cy="17" r="4" fill="#85789b" /><text x="29" y="21" className="node-label">Commerce</text><text x="15" y="42" className="node-meta">SELL &amp; OPERATE</text></g>
-      <circle className="signal" cx="270" cy="69" r="6" fill="#4b9464" /><circle className="signal" cx="421" cy="220" r="5" fill="#d18b4b" /><circle className="signal" cx="270" cy="371" r="5" fill="#7696a0" />
+      <circle className="signal" cx="270" cy="69" r="6" fill="#4b9464" /><circle className="signal" cx="421" cy="220" r="5" fill="#d18b4b" /><circle className="signal" cx="270" cy="371" r="5" fill="#7696a0" /><circle className="signal" cx="119" cy="220" r="5" fill="#85789b" />
     </svg>
   </div>;
 }
