@@ -1,0 +1,19 @@
+{
+  "name": "kunemi-workspace",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.1.2",
+  "scripts": {
+    "dev": "pnpm --recursive --parallel --filter @workspace/kunemi-site --filter @workspace/kunemi-design-system --if-present run dev",
+    "dev:site": "pnpm --filter @workspace/kunemi-site run dev",
+    "dev:design": "pnpm --filter @workspace/kunemi-design-system run dev",
+    "build": "pnpm --recursive --workspace-concurrency=1 --if-present run build",
+    "typecheck": "pnpm --recursive --if-present run typecheck",
+    "cloudflare:dev": "pnpm --filter @workspace/kunemi-site run cloudflare:dev",
+    "cloudflare:deploy": "pnpm --filter @workspace/kunemi-site run cloudflare:deploy"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "wrangler": "^4.0.0"
+  }
+}

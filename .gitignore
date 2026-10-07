@@ -1,0 +1,9 @@
+node_modules/
+**/node_modules/
+**/dist/
+**/.tsbuildinfo
+*.tsbuildinfo
+.wrangler/
+**/.wrangler/
+.dev.vars
+/.playwright-cli/
