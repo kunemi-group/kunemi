@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Shell } from '@/components/layout/site-shell';
 import { Closing } from '@/components/sections/home-sections';
-import { CommerceMock, DotrixMock, KumoveMap, ShopflowMock } from '@/components/sections/product-visuals';
+import { CommerceMock, DotrixMock, KumoveMock, ShopflowMock } from '@/components/sections/product-visuals';
 import { products, productDetails } from '@/data/site-content';
 
 export function ProductDetail({ id }: { id: string }) {
@@ -15,7 +15,7 @@ export function ProductDetail({ id }: { id: string }) {
   let visual: ReactNode = <DotrixMock />;
   if (id === 'shopflow') visual = <ShopflowMock />;
   if (id === 'commerce') visual = <CommerceMock />;
-  if (id === 'kumove') visual = <KumoveMap />;
+  if (id === 'kumove') visual = <KumoveMock />;
   return <Shell><main>
     <section className="page-hero pt-section-compact pb-section-tight"><div className="container">
       <p className="eyebrow mono">{detail.accent} <span className="building"><i className="status-dot" />Building</span></p>
