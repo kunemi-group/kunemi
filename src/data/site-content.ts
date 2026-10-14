@@ -1,9 +1,19 @@
 export const products = [
-  { name: 'Dotrix', category: 'AI / DEVELOPER TOOLS', desc: 'An AI workspace for building software, with agents, project knowledge and developer workflows working together.', href: '/products/dotrix', action: 'Build software', mark: 'dotrix' },
-  { name: 'Shopflow', category: 'SOCIAL COMMERCE', desc: 'A customer-facing shopping experience for discovering products, interacting with sellers and buying.', href: '/products/shopflow', action: 'Discover & buy', mark: 'shopflow' },
-  { name: 'Kunemi Commerce', category: 'COMMERCE OPERATIONS', desc: 'Business-facing software to manage products, orders, payments, customers, sales and day-to-day operations.', href: '/products/commerce', action: 'Sell & operate', mark: 'commerce' },
-  { name: 'Kumove', category: 'MOVEMENT INFRASTRUCTURE', desc: 'A postcode-aware movement and delivery network connecting businesses, people and local collection points.', href: '/products/kumove', action: 'Move goods', mark: 'kumove' },
+  { name: 'Dotrix', category: 'AI / DEVELOPER TOOLS', desc: 'An AI workspace for building software, with agents, project knowledge and developer workflows working together.', short: 'AI workspace for building software', href: '/products/dotrix', action: 'Build software', mark: 'dotrix', milestone: 'Architecture & Core UI' },
+  { name: 'Shopflow', category: 'SOCIAL COMMERCE', desc: 'A customer-facing shopping experience for discovering products, interacting with sellers and buying.', short: 'Social discovery and shopping', href: '/products/shopflow', action: 'Discover & buy', mark: 'shopflow', milestone: 'Discovery experience' },
+  { name: 'Kunemi Commerce', category: 'COMMERCE OPERATIONS', desc: 'Business-facing software to manage products, orders, payments, customers, sales and day-to-day operations.', short: 'Business tools for orders and operations', href: '/products/commerce', action: 'Sell & operate', mark: 'commerce', milestone: 'Operations core' },
+  { name: 'Kumove', category: 'MOVEMENT INFRASTRUCTURE', desc: 'A postcode-aware movement and delivery network connecting businesses, people and local collection points.', short: 'Postcode-aware movement and delivery', href: '/products/kumove', action: 'Move goods', mark: 'kumove', milestone: 'Routing & hand-off model' },
 ];
+
+export const productByMark = Object.fromEntries(products.map((p) => [p.mark, p])) as Record<(typeof products)[number]['mark'], (typeof products)[number]>;
+
+export const waitlistInterests = [
+  { id: 'dotrix', label: 'Dotrix' },
+  { id: 'shopflow', label: 'Shopflow' },
+  { id: 'commerce', label: 'Commerce' },
+  { id: 'kumove', label: 'Kumove' },
+  { id: 'general', label: 'General / Partnerships' },
+] as const;
 
 export const productDetails: Record<string, { title: string; description: string; headline: string; body: string; phrase: string; points: string[]; accent: string }> = {
   dotrix: {
