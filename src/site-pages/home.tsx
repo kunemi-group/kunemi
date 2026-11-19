@@ -11,7 +11,7 @@ export function Home() {
   return <Shell>
     <main>
       <section className="hero py-section-hero"><div className="container hero-grid">
-        <div className="reveal"><p className="eyebrow mono">KUNEMI TECHNOLOGY</p><h1>Building intelligent software for the way <em>business works.</em></h1><p className="hero-copy">Kunemi builds AI-powered software, commerce platforms and digital infrastructure that help people and businesses build, operate and move.</p>
+        <div className="reveal"><p className="eyebrow mono">KUNEMI TECHNOLOGY</p><h1>Intelligent software for the way business works.</h1><p className="hero-copy">Kunemi builds AI-powered software, commerce platforms and digital infrastructure that help people and businesses build, operate and move.</p>
           <div className="hero-actions"><Button asChild size="lg"><a href="#products">Explore our products <ArrowRight size={15} /></a></Button><Button asChild variant="outline" size="lg"><Link href="/about">About Kunemi <ArrowUpRight size={14} /></Link></Button></div>
           <div className="hero-note"><span className="status-dot" /> Independent products. A shared technology vision.</div>
         </div><EcosystemGraphic />
